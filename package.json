@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --no-source-maps",
+    "postinstall": "sed -i.bak 's_\"//# sourceMappingURL=\"_\"//# source\"+\"MappingURL=\"_' node_modules/@auth0/auth0-react/dist/*.js"
+
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/JS-Jr-Dev-Job-Board/admin-app#readme",
   "dependencies": {
+    "@auth0/auth0-react": "^1.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

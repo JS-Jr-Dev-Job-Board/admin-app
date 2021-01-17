@@ -1,16 +1,18 @@
 import React from 'react'
 import { render } from 'react-dom'
-import './styles.scss'
+import { Auth0Provider } from '@auth0/auth0-spa-js'
+import App from './src/App'
 
-function App(props){
-    return (
-        <div>
-            <h1>welcome to the central nervous system</h1>
-        </div>
-    )
-}
+const domain = process.env.REACT_APP_AUTH0_DOMAIN
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
 
 render(
-    <App />, 
+    <Auth0Provider
+        domain={domain}
+        clientId={clientId}
+        redirectUri={window.location.origin}
+    >
+        <App />
+    </Auth0Provider>,
     document.querySelector('#root')
 )
