@@ -27,7 +27,8 @@ class DashboardCard extends Component {
                   <div className="card" key={job.id}>
                     <p>{job.id}</p>
                     <h2>{job.companyName}</h2>
-                    <p>{job.salary}</p>
+                    <p>Salary: {job.salary}</p>
+                    <p>Description:</p>
                     <p>{job.description}</p>
                     <button href={job.applyUrl}>apply-link</button>
                   </div>
