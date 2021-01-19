@@ -26,9 +26,10 @@ class DashboardCard extends Component {
                 return (
                   <div className="card" key={job.id}>
                     <p>{job.id}</p>
-                    <h2>{job.companyName}</h2>
-                    <p>Salary: {job.salary}</p>
-                    <p>Description:</p>
+                    <h3>{job.companyName}</h3>
+                    <h4>Salary:</h4>
+                    <p>{job.salary}</p>
+                    <h4>Description:</h4>
                     <p>{job.description}</p>
                     <button href={job.applyUrl}>apply-link</button>
                   </div>
@@ -57,8 +58,8 @@ class DashboardCard extends Component {
   
       <div className="dashboardCard">
 
-       <h1>Current Available Positions</h1>
-        <h3>{this.state.jobs}</h3>
+       <h2>Current Available Positions</h2>
+        <div>{this.state.jobs}</div>
   
       </div>
   

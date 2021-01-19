@@ -9,6 +9,12 @@ h1{
   color: black;
   text-align: center;
 }
+h2{
+  color: #303113;
+  text-align: center;
+  text-decoration: #303113 underline;
+  
+}
 p{
   color: #303113;
 }
@@ -16,6 +22,7 @@ p{
   display: flex;
   margin: 2rem;
   flex-direction: column;
+  padding: 1rem;
 }
 .card{
   border: solid 2px lightgrey;
