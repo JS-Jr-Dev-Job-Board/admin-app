@@ -3,17 +3,19 @@ import axios from "./axios";
 
 
 
-
-
-
 class DashboardCard extends Component {
+
+
   constructor(props) {
     super(props);
     this.state = {
       Jobs: [],
     };
   }
+
+
   getJobsData() {
+      //imported from axios component
     axios
       .get(`/`, {})
       .then((res) => {
@@ -53,19 +55,15 @@ class DashboardCard extends Component {
     this.getJobsData();
   }
 
-
-
   render() {
     return (
-  
       <div className="dashboardCard">
-
-       <h2>Current Available Positions</h2>
+        <h2>Current Available Positions</h2>
         <div>{this.state.jobs}</div>
-  
       </div>
-  
     );
   }
 }
+
+
 export default DashboardCard;
