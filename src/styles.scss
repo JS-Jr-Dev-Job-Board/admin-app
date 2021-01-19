@@ -1,4 +1,22 @@
 * {
   box-sizing: border-box;
   color: dodgerblue;
+  margin: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+  color: black;
+  text-align: center;
+}
+p{
+  color: #303113;
+}
+.dashboardCard{
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+}
+.card{
+  border: solid 2px lightgrey;
 }
