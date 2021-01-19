@@ -3,7 +3,7 @@ import DashboardCard from "./DashboardCard";
 
 const Dashboard = ({}) => {
   return (
-    <div>
+    <div className="dashboard">
       <h1>Admin Dashboard</h1>
 
       <DashboardCard />
