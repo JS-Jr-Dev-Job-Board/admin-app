@@ -1,4 +1,32 @@
 * {
   box-sizing: border-box;
   color: dodgerblue;
+  margin: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+  color: black;
+  text-align: center;
+}
+h2{
+  color: #303113;
+  text-align: center;
+  text-decoration: #303113 underline;
+  
+}
+p{
+  color: #303113;
+}
+.dashboard{
+  padding-top: 1rem;
+}
+.dashboardCard{
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card{
+  border: solid 2px lightgrey;
 }
